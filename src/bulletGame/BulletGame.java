@@ -36,6 +36,7 @@ public class BulletGame extends BasicGame {
 	@Override
 	public void init(GameContainer arg0) throws SlickException {
 		
+		entities.add(new Bullet(200, 0));
 		
 	}
 	@Override
