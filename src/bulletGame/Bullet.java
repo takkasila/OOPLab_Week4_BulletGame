@@ -15,7 +15,7 @@ public class Bullet implements Entity{
 	
 	@Override
 	public void Render(Graphics g) {
-		
+		g.fillOval(GetPos_x(), GetPos_y(), BULLET_SIZE, BULLET_SIZE);
 	}
 
 	@Override
