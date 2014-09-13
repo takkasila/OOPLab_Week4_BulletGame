@@ -28,16 +28,16 @@ public class BulletGame extends BasicGame {
 		AppGameContainer appgc = new AppGameContainer(game);
 		
 		appgc.setDisplayMode(SCREEN_WIDTH, SCREEN_HEIGHT, false);
-		appgc.setTargetFrameRate(60);
+		appgc.setTargetFrameRate(FRAMERATE);
 		appgc.start();
 	}
 
 	@Override
 	public void init(GameContainer arg0) throws SlickException {
 		
-		entities.add(new DirectionalBullet(100, 100, 45, 2));
-		//entities.add(new DirectionalBullet(100, 100));
 		entities.add(new Bullet(SCREEN_WIDTH/2, SCREEN_HEIGHT/2));
+		entities.add(new DirectionalBullet(100, 100, 0, 2));
+		entities.add(new SineBullet(100, 200, 45, 1));
 		
 	}
 	@Override

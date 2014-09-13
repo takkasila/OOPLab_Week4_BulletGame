@@ -18,8 +18,8 @@ public class DirectionalBullet extends Bullet {
 	@Override
 	public void Update(int delta)
 	{
-		float x = (float) (Math.cos(direction) * vel);
-		float y = (float) (Math.sin(direction) * vel);
+		float x = (float) (Math.cos(Math.toRadians( direction) ) * vel);
+		float y = (float) (Math.sin(Math.toRadians( direction) ) * vel);
 		
 		SetXY(GetPos_x()+ x, GetPos_y()- y);
 		
