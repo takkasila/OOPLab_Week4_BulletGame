@@ -35,7 +35,6 @@ public class SineBullet extends DirectionalBullet {
 	@Override
 	public void Render(Graphics g)
 	{
-
 		g.fillOval(GetPos_x() + xBySin , GetPos_y() - yBySin , BULLET_SIZE, BULLET_SIZE);
 		
 	}

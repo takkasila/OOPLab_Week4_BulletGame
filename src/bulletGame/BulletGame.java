@@ -38,6 +38,7 @@ public class BulletGame extends BasicGame {
 		entities.add(new Bullet(SCREEN_WIDTH/2, SCREEN_HEIGHT/2));
 		entities.add(new DirectionalBullet(100, 100, 0, 2));
 		entities.add(new SineBullet(100, 200, 45, 1));
+		entities.add(new RandomDirectionalBullet(100, 300, 0, 2));
 		
 	}
 	@Override
