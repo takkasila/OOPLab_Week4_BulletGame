@@ -18,8 +18,7 @@ public class BulletGame extends BasicGame {
 
 	LinkedList<Entity> entities;
 	
-	public BulletGame(String title) {
-		super(title);
+	public BulletGame(String title) {		super(title);
 		entities = new LinkedList<>();
 	}
 
@@ -36,7 +35,9 @@ public class BulletGame extends BasicGame {
 	@Override
 	public void init(GameContainer arg0) throws SlickException {
 		
-		entities.add(new Bullet(200, 0));
+		entities.add(new DirectionalBullet(100, 100, 45, 2));
+		//entities.add(new DirectionalBullet(100, 100));
+		entities.add(new Bullet(SCREEN_WIDTH/2, SCREEN_HEIGHT/2));
 		
 	}
 	@Override

@@ -14,15 +14,19 @@ public class Bullet implements Entity{
 	}
 	
 	@Override
-	public void Render(Graphics g) {
-		g.fillOval(GetPos_x(), GetPos_y(), BULLET_SIZE, BULLET_SIZE);
-	}
-
-	@Override
 	public void Update(int delta) {
 		
 		
+		
 	}
+	@Override
+	public void Render(Graphics g) {
+		
+		g.fillOval(pos_x, pos_y, BULLET_SIZE, BULLET_SIZE);
+		
+	}
+
+	
 	public float GetPos_x()
 	{
 		return pos_x;
